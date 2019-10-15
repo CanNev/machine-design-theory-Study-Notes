@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>安全系数计算</title>
+</head>
+
+<body>
+  <h2>安全系数计算</h2>
+  <ol>
+    <li>
+      <p>根据轴的运动状态,判断轴所受弯曲应力和扭转切应力的的变化情况</p>
+      <ul>
+        <li>
+          工作时稳定的单向旋转，轴所受的<strong>弯曲</strong>应力为
+          <strong>对称循环应力</strong>，
+          <strong>扭转切</strong> 应力为<strong>静应力</strong>
+        </li>
+
+        <li>
+          工作时频繁正反转，轴所受的的<strong>弯曲</strong>应力为
+          <strong>对称循环应力</strong>， <strong>扭转切</strong>应力为
+          <strong>对称循环应力</strong>
+        </li>
+        <li>
+          工作时单项旋转且经常开车停车，轴所受的的<strong>弯曲</strong>应力为
+          <strong>对称循环应力</strong>， <strong>扭转切</strong>应力为<strong>脉动循环应力</strong>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>计算弯曲应力和扭转切应力</p>
+      <ul>
+        <li>
+          <p>
+            弯曲应力
+            <br />
+            &sigma;<sub>b</sub> = M / W
+            <br />
+            W = &pi;d<sup>3</sup> / 32
+            <br />
+          </p>
+        </li>
+        <li>
+          <p>
+            扭转切应力
+            <br />
+            &tau; = T / W<sub>T</sub>
+            <br />
+            W<sub>T</sub> = &pi;d<sup>3</sup> / 16
+          </p>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <p>
+        根据得出的应力状态的应力值计算对应的<strong>平均应力m</strong>
+        和<strong>应力幅a</strong>
+      </p>
+      <table border="1" cellpadding="10">
+        <caption>
+          应力类型与参数对照表（适用&sigma;和&tau;）
+        </caption>
+        <tr>
+          <th>应力类型</th>
+          <th>应力比r</th>
+          <th>平均应力&tau;<sub>m</sub></th>
+          <th>应力幅&tau;<sub>a</sub></th>
+        </tr>
+        <tr>
+          <td>静应力</td>
+          <td>1</td>
+          <td>&tau;</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>对称循环应力</td>
+          <td>-1</td>
+          <td>0</td>
+          <td>&tau;</td>
+        </tr>
+        <tr>
+          <td>脉动循环应力</td>
+          <td>0</td>
+          <td>&tau; / 2</td>
+          <td>&tau; / 2</td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      <p>计算安全系数S<sub>&sigma;</sub>和S<sub>&tau;</sub></p>
+      <p>
+        弯曲应力的安全系数为
+        <br>
+        S<sub>&sigma;</sub> = &sigma;<sub>-1</sub> / K<sub>&sigma;</sub>&sigma;<sub>a</sub> +
+        &phi;<sub>&sigma;</sub>&sigma;<sub>m</sub>
+      </p>
+      <p>
+        扭转应力的安全系数为
+        <br>
+        S<sub>&tau;</sub> = &tau;<sub>-1</sub> / K<sub>&tau;</sub>&tau;<sub>a</sub> +
+        &phi;<sub>&tau;</sub>&tau;<sub>m</sub>
+      </p>
+    </li>
+  </ol>
+</body>
+
+</html>
