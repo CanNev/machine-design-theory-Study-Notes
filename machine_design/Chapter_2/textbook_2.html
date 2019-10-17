@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>第 2 章 螺纹连接和螺旋传动</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css" integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        <link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        <script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+    </head>
+    <body class="vscode-light">
+        <!--
+ * @Description: In User Settings Edit
+ * @Author: your name
+ * @Date: 2019-10-15 09:30:00
+ * @LastEditTime: 2019-10-17 17:07:04
+ * @LastEditors: Please set LastEditors
+ -->
+<h1 id="%e7%ac%ac-2-%e7%ab%a0-%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e5%92%8c%e8%9e%ba%e6%97%8b%e4%bc%a0%e5%8a%a8">第 2 章 螺纹连接和螺旋传动</h1>
+<h2 id="%e8%9e%ba%e7%ba%b9%e6%a6%82%e8%bf%b0">螺纹概述</h2>
+<h3 id="%e8%9e%ba%e7%ba%b9%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%92%8c%e5%ba%94%e7%94%a8">螺纹的类型和应用</h3>
+<ul>
+<li>
+<p>可拆连接：<strong>无需破坏连接中任一零件</strong>就可以拆开的链接为可拆连接。</p>
+<blockquote>
+<p>机械术语的 <strong>可拆</strong> 和生活用语是有区别的</p>
+</blockquote>
+</li>
+<li>
+<p>各种螺纹类型和其对应的特点</p>
+<blockquote>
+<p>列举知识点</p>
+</blockquote>
+<ul>
+<li>
+<p>除了矩形螺纹，其他所有螺纹均已经标准化</p>
+</li>
+<li>
+<p>细牙螺纹升角小，自锁性能好，强度高，但是 <strong>不耐磨</strong></p>
+</li>
+<li>
+<p>牙型角：指螺纹轴向截面内，螺纹牙型两侧边的夹角。牙型斜角大,<strong>螺旋副效率低,自锁性好</strong></p>
+</li>
+<li>
+<p>螺纹升角：螺纹升角即为导程角，在中径圆柱上螺旋线的切线与垂直于螺纹轴线的平面间的夹角，该角度影响螺纹自锁和防松。<strong>升角越小自锁能力越好</strong></p>
+<blockquote>
+<p>牙形角和螺纹升角不是一个概念，对自锁性带来的影响原因也是不一样的</p>
+<ul>
+<li>螺旋升角小<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">↓</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span>，自锁性好<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span></li>
+<li>牙形角大<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span>，自锁性好<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span></li>
+</ul>
+</blockquote>
+</li>
+<li>
+<p>细牙螺母常见于薄壁和细小零件，也可作为 <strong>微调结构</strong></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="%e8%9e%ba%e7%ba%b9%e7%9a%84%e4%b8%bb%e8%a6%81%e5%8f%82%e6%95%b0">螺纹的主要参数</h3>
+<ul>
+<li>熟悉的知识点，详解螺旋升角 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ψ</mi></mrow><annotation encoding="application/x-tex">\psi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ψ</span></span></span></span> 的计算公式,，通常按螺纹的中径<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>d</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">d_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>处计算，即<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>ψ</mi><mo>=</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>t</mi><mi>a</mi><mi>n</mi><mfrac><msub><mi>P</mi><mi>h</mi></msub><mrow><mi>π</mi><msub><mi>d</mi><mn>2</mn></msub></mrow></mfrac><mo>=</mo><mi>a</mi><mi>r</mi><mi>c</mi><mi>t</mi><mi>a</mi><mi>n</mi><mfrac><mrow><mi>n</mi><mi>P</mi></mrow><mrow><mi>π</mi><msub><mi>d</mi><mn>2</mn></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">\psi = arctan\frac{P_h}{\pi d_2} = arctan\frac{n P}{\pi d_2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">ψ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mord mathdefault">c</span><span class="mord mathdefault">t</span><span class="mord mathdefault">a</span><span class="mord mathdefault">n</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+螺距 P 和导程<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>P</mi><mi>h</mi></msub></mrow><annotation encoding="application/x-tex">P_h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>和线数 n 的螺纹有<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>P</mi><mi>h</mi></msub><mo>=</mo><mi>n</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">P_h = n P
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">n</span><span class="mord mathdefault" style="margin-right:0.13889em;">P</span></span></span></span></span></p>
+</li>
+</ul>
+<hr>
+<h2 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e7%b1%bb%e5%9e%8b%e5%92%8c%e6%a0%87%e5%87%86%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e4%bb%b6">螺纹连接的类型和标准螺纹连接件</h2>
+<h3 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e7%b1%bb%e5%9e%8b%e7%89%b9%e7%82%b9%e7%95%a5">螺纹连接的类型（特点略）</h3>
+<ul>
+<li>螺栓连接</li>
+<li>双头螺柱连接</li>
+<li>螺钉连接</li>
+<li>紧定螺钉连接</li>
+</ul>
+<h3 id="%e6%a0%87%e5%87%86%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e4%bb%b6">标准螺纹连接件</h3>
+<ul>
+<li>A 级精度：精度最高，用于要求配合精确，<strong>防止震动</strong> 等重要场合</li>
+<li>B 级精度: 多用于受载较大其经常 <strong>拆卸，调整和承受变载荷</strong> 的连接</li>
+<li>C 级精度： 多用于一般连接</li>
+</ul>
+<h3 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e9%a2%84%e7%b4%a7">螺纹连接的预紧</h3>
+<ul>
+<li>使用测力矩扳手，操作方便，准确性差，不适合大型螺栓</li>
+<li>使用定力矩扳手，操作方便，准确性差，不适合大型螺栓</li>
+<li>测量螺栓受力后的伸长量，<strong>相对精确</strong></li>
+</ul>
+<h3 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e9%98%b2%e6%9d%be">螺纹连接的防松</h3>
+<blockquote>
+<p>防松的实质在于阻止螺纹幅在受载时发生<strong>相对转动</strong></p>
+</blockquote>
+<ul>
+<li>摩擦防松
+<ul>
+<li>弹簧垫片</li>
+<li>对顶螺母</li>
+<li>自锁螺母</li>
+</ul>
+</li>
+<li>机械防松
+<ul>
+<li>开口销和开槽螺母</li>
+<li>止动垫圈</li>
+<li>串联钢丝</li>
+</ul>
+</li>
+<li>破坏螺纹幅的运动关系
+<ul>
+<li>螺纹连接处冲点</li>
+<li>涂胶黏剂</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="%e8%9e%ba%e6%a0%93%e7%bb%84%e8%bf%9e%e6%8e%a5%e7%9a%84%e5%8f%97%e5%8a%9b%e5%88%86%e6%9e%90">螺栓组连接的受力分析</h2>
+<blockquote>
+<p>比较复杂的知识点，需要配图和数值计算</p>
+</blockquote>
+<h3 id="%e6%9d%be%e8%9e%ba%e6%a0%93%e8%bf%9e%e6%8e%a5">松螺栓连接</h3>
+<ul>
+<li>受力图例
+<ul>
+<li>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>单个螺栓承载计算：螺栓只受轴向拉力 F</li>
+<li>强度准则<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi><mo>=</mo><mfrac><mi>F</mi><mrow><mi>π</mi><msubsup><mi>d</mi><mn>1</mn><mn>2</mn></msubsup><mi mathvariant="normal">/</mi><mn>4</mn></mrow></mfrac><mo>≤</mo><mo stretchy="false">[</mo><mi>σ</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">{\sigma} = \frac{F}{\pi d_1^2 / 4} \le [ \sigma ]
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.3126379999999997em;vertical-align:-0.9523079999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7959080000000001em;"><span style="top:-2.433692em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.26630799999999993em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord">4</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9523079999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mclose">]</span></span></span></span></span></p>
+</li>
+</ul>
+<h3 id="%e7%b4%a7%e8%9e%ba%e6%a0%93%e8%bf%9e%e6%8e%a5">紧螺栓连接</h3>
+<blockquote>
+<p>紧螺栓连接，螺栓受拉力，统一强度准则为</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mrow><mi>c</mi><mi>a</mi></mrow></msub><mo>=</mo><mfrac><mrow><mn>1.3</mn><mi>F</mi></mrow><mrow><mi>π</mi><msubsup><mi>d</mi><mn>1</mn><mn>2</mn></msubsup><mi mathvariant="normal">/</mi><mn>4</mn></mrow></mfrac><mo>≤</mo><mo stretchy="false">[</mo><mi>σ</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex"> {\sigma_{ca}} = \frac{1.3 F}{\pi d_1^2 / 4} \le [ \sigma ]
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">c</span><span class="mord mathdefault mtight">a</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.3126379999999997em;vertical-align:-0.9523079999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7959080000000001em;"><span style="top:-2.433692em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.26630799999999993em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord">4</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">.</span><span class="mord">3</span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9523079999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mclose">]</span></span></span></span></span></p>
+<p>其中 1.3 为复合了拉应力和扭转，将拉力增大 30%作为考虑了扭转的影响</p>
+</blockquote>
+<h4 id="%e8%9e%ba%e6%a0%93%e5%8f%aa%e5%8f%97%e9%a2%84%e7%b4%a7%e5%8a%9b%e4%bd%9c%e7%94%a8">螺栓只受预紧力作用</h4>
+<h5 id="%e5%8f%97%e6%8b%89%e6%a8%aa%e5%90%91%e6%80%bb%e8%bd%bd%e8%8d%b7fsigma">受拉横向总载荷<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></h5>
+<ul>
+<li>
+<p>受力图例</p>
+<ul>
+<li>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单个螺栓承载计算：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>0</mn></msub><mo>≥</mo><mfrac><mrow><msub><mi>K</mi><mi>s</mi></msub><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><mrow><mi>f</mi><mi>z</mi><mi>i</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_0 \ge \frac{K_s F_\Sigma}{f z i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.2407700000000004em;vertical-align:-0.8804400000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault">i</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8804400000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>式中</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">K_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> —— 防滑系数</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> —— 横向总载荷</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> —— 接合面的摩擦系数</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ——— 接合面数</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span> ——— 螺栓数目</li>
+</ul>
+</li>
+</ul>
+<h5 id="%e6%97%8b%e8%bd%ac%e5%8a%9b%e7%9f%a9t">旋转力矩<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span></h5>
+<ul>
+<li>
+<p>受力图例</p>
+<ul>
+<li>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单个螺栓承载计算：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>0</mn></msub><mo>≥</mo><mfrac><mrow><msub><mi>K</mi><mi>s</mi></msub><mi>T</mi></mrow><mrow><mi>f</mi><mover><mo><munder><mo><mo>∑</mo></mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow></munder></mo><mi>z</mi></mover><msub><mi>r</mi><mi>i</mi></msub></mrow></mfrac></mrow><annotation encoding="application/x-tex">{F_0} \ge \frac{K_s T} { f   \overset{z}{\underset{i = 1}{\sum }} r_i}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≥</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.579396em;vertical-align:-2.219066em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.11em;"><span class="pstrut" style="height:3.351392em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513920000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop"><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.75em;"><span style="top:-2.122326em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.977674em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.95em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.977674em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.581392em;"><span class="pstrut" style="height:3.351392em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-4.028392em;"><span class="pstrut" style="height:3.351392em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.219066em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>式中</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>K</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">K_s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">K</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">s</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 防滑系数；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> ———— 旋转力矩；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span></span></span></span> ———— 接合面的摩擦系数；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span> ———— 螺栓的数目；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>r</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">r_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 力臂</li>
+</ul>
+</li>
+</ul>
+<h4 id="%e8%9e%ba%e6%a0%93%e5%8f%97%e9%a2%84%e7%b4%a7%e5%8a%9b%e5%92%8c%e5%b7%a5%e4%bd%9c%e8%bd%bd%e8%8d%b7%e4%bd%9c%e7%94%a8">螺栓受预紧力和工作载荷作用</h4>
+<blockquote>
+<p>该情况下总拉力满足下列公式，后面会讲解</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><msub><mi>F</mi><mn>1</mn></msub><mo>+</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">F_2 = F_1 + F
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>2</mn></msub><mo>=</mo><msub><mi>F</mi><mn>0</mn></msub><mo>+</mo><mfrac><msub><mi>C</mi><mi>b</mi></msub><mrow><msub><mi>C</mi><mi>b</mi></msub><mo>+</mo><msub><mi>C</mi><mi>m</mi></msub></mrow></mfrac><mi>F</mi></mrow><annotation encoding="application/x-tex">F_2 = F_0 + \frac{C_b}{C_b + C_m} F
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span></span></p>
+</blockquote>
+<h5 id="%e8%bd%b4%e5%90%91%e6%80%bb%e8%bd%bd%e8%8d%b7fsigma">轴向总载荷<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></h5>
+<ul>
+<li>
+<p>受力图例</p>
+<ul>
+<li>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单个螺栓承载计算：</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>F</mi><mo>=</mo><mfrac><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub><mi>z</mi></mfrac></mrow><annotation encoding="application/x-tex">{F} = \frac{F_\Sigma} {z}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.04633em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>式中</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 轴向总载荷；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span> ———— 螺栓数目</li>
+</ul>
+</li>
+</ul>
+<h5 id="%e5%80%be%e8%a6%86%e5%8a%9b%e7%9f%a9m">倾覆力矩<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span></span></span></span></h5>
+<ul>
+<li>
+<p>受力图例</p>
+<ul>
+<li>
+<blockquote>
+<p>待补充</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>单个螺栓承载计算；</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub><mo>=</mo><mfrac><mrow><mi>M</mi><msub><mi>L</mi><mrow><mi>m</mi><mi>a</mi><mi>x</mi></mrow></msub></mrow><mrow><munder><mo><mover><mo><mo>∑</mo></mo><mi>z</mi></mover></mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow></munder><msubsup><mi>L</mi><mi>i</mi><mn>2</mn></msubsup></mrow></mfrac></mrow><annotation encoding="application/x-tex">F_{max} = \frac{M L_{max}}{\underset{i = 1}{\overset{z}{\sum}}L_i^2}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:3.579396000000001em;vertical-align:-2.2190660000000006em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.1099999999999994em;"><span class="pstrut" style="height:3.351392em;"></span><span class="mord"><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513920000000001em;"><span style="top:-2.473718em;margin-left:0em;"><span class="pstrut" style="height:3.351392em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.351392em;"><span class="pstrut" style="height:3.351392em;"></span><span><span class="mop"><span class="mord"><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3513920000000001em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span></span></span><span style="top:-3.95em;margin-left:0em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.04398em;">z</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.25001em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9776740000000002em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7959080000000001em;"><span style="top:-2.4231360000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.27686399999999994em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.581392em;"><span class="pstrut" style="height:3.351392em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-4.028392em;"><span class="pstrut" style="height:3.351392em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">a</span><span class="mord mathdefault mtight">x</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:2.2190660000000006em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>式中</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 轴向总载荷；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">z</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span></span></span></span> ———— 螺栓数目</li>
+</ul>
+</li>
+</ul>
+<h3 id="%e5%8f%97%e5%89%aa%e8%9e%ba%e6%a0%93">受剪螺栓</h3>
+<blockquote>
+<p>对于受剪螺栓的强度准则如下</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>τ</mi><mo>=</mo><mfrac><mi>F</mi><mrow><mi>i</mi><mi>π</mi><msubsup><mi>d</mi><mn>0</mn><mn>2</mn></msubsup><mi mathvariant="normal">/</mi><mn>4</mn></mrow></mfrac><mo>≤</mo><mo stretchy="false">[</mo><mi>τ</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\tau = \frac{F}{i \pi d_0^2 /4} \le [\tau]
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.3126379999999997em;vertical-align:-0.9523079999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">i</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7959080000000001em;"><span style="top:-2.433692em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span><span style="top:-3.0448000000000004em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.26630799999999993em;"><span></span></span></span></span></span></span><span class="mord">/</span><span class="mord">4</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9523079999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.1132em;">τ</span><span class="mclose">]</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>p</mi></msub><mo>=</mo><mfrac><mi>F</mi><mrow><msub><mi>d</mi><mn>0</mn></msub><msub><mi>L</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow></mfrac><mo>≤</mo><mo stretchy="false">[</mo><msub><mi>σ</mi><mi>p</mi></msub><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">\sigma_p = \frac{F}{d_0 L_{min}} \le [\sigma_p]
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.19633em;vertical-align:-0.8360000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.36033em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.036108em;vertical-align:-0.286108em;"></span><span class="mopen">[</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span></span></p>
+<p>式中</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">d_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 螺栓剪切面的直径；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.65952em;vertical-align:0em;"></span><span class="mord mathdefault">i</span></span></span></span> ———— 接合面数；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">L_{min}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> ———— 螺杆到挤压面的最小高度</li>
+</ul>
+</blockquote>
+<h4 id="%e5%8f%97%e5%89%aa%e6%a8%aa%e5%90%91%e6%80%bb%e8%bd%bd%e8%8d%b7fsigma">受剪横向总载荷<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mi mathvariant="normal">Σ</mi></msub></mrow><annotation encoding="application/x-tex">F_\Sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">Σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></h4>
+<blockquote>
+<p>(未完待续)</p>
+</blockquote>
+<hr>
+<h2 id="%e8%9e%ba%e6%a0%93%e7%bb%84%e8%bf%9e%e6%8e%a5%e7%9a%84%e8%ae%be%e8%ae%a1">螺栓组连接的设计</h2>
+<h3 id="%e8%9e%ba%e6%a0%93%e7%bb%84%e8%bf%9e%e6%8e%a5%e7%9a%84%e6%9c%ba%e6%9e%84%e8%ae%be%e8%ae%a1">螺栓组连接的机构设计</h3>
+<blockquote>
+<p>列举知识点</p>
+</blockquote>
+<ul>
+<li>螺栓数目不易过多且<strong>需取偶数</strong>，如 4，6，8 等</li>
+<li>螺栓排列应<strong>保证扳手活动空间</strong></li>
+</ul>
+<h3 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e5%bc%ba%e5%ba%a6%e8%ae%a1%e7%ae%97">螺纹连接的强度计算</h3>
+<blockquote>
+<p>（图例待补充）</p>
+</blockquote>
+<ul>
+<li>对于只受预紧力的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">F_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的普通螺栓连接，虽然其螺栓杆同时承受拉伸应力和扭转切应力，但计算时，可将所受的拉力增大 30%作为考虑了扭转的影响，然后只按抗拉强度来计算。</li>
+<li>对应重要连接，除了做静强度计算外，还应对螺栓的<strong>疲劳强度</strong>做精细校核。</li>
+<li><strong>螺栓</strong>的刚度表示为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">C_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>,<strong>连接件</strong>的刚度表示为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">C_m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+<li>刚度性质<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span>,与特性线角度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>θ</mi></mrow><annotation encoding="application/x-tex">\theta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">θ</span></span></span></span>成<strong>正相关</strong>，与形变量<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span>成<strong>负相关</strong></li>
+</ul>
+<h3 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e6%9d%90%e6%96%99%e5%8f%8a%e8%ae%b8%e7%94%a8%e5%ba%94%e5%8a%9b">螺纹连接的材料及许用应力</h3>
+<h4 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e6%9d%90%e6%96%99">螺纹连接的材料</h4>
+<ul>
+<li>
+<p>螺栓、螺柱和螺钉的力学性能等级分 <strong>9 级</strong>，从 4.6 到 12.9，<strong>数值越高越强</strong>；</p>
+</li>
+<li>
+<p>记材料的<strong>性能等级为[a].[b]</strong> ,如 6.8 级螺栓 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mn>6</mn><mi mathvariant="normal">，</mi><mi>b</mi><mo>=</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">a = 6，b = 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">6</span><span class="mord cjk_fallback">，</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">8</span></span></span></span>；</p>
+</li>
+<li>
+<p>a 代表的是材料的抗拉极限<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的 1/100,即</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo>=</mo><mfrac><msub><mi>σ</mi><mi>B</mi></msub><mn>100</mn></mfrac></mrow><annotation encoding="application/x-tex">a = \frac{\sigma_B}{100}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.7935599999999998em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1075599999999999em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p>b 代表的是材料的屈服极限<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>与抗拉极限的<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>之间比值的 10 倍，即</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>b</mi><mo>=</mo><mn>10</mn><mfrac><msub><mi>σ</mi><mi>S</mi></msub><msub><mi>σ</mi><mi>B</mi></msub></mfrac></mrow><annotation encoding="application/x-tex">b = 10 \frac{\sigma_S}{\sigma_B}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.94356em;vertical-align:-0.8360000000000001em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.1075599999999999em;"><span style="top:-2.3139999999999996em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8360000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p>联立计算可以得到材料的<strong>抗拉极限</strong>和<strong>屈服极限</strong>和 <strong>性能等级[a].[b]</strong> 的关系</p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>B</mi></msub><mo>=</mo><mn>100</mn><mi>a</mi></mrow><annotation encoding="application/x-tex">\sigma_B = 100 a
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord mathdefault">a</span></span></span></span></span></p>
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>S</mi></msub><mo>=</mo><mn>10</mn><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\sigma_S = 10 a b
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord mathdefault">a</span><span class="mord mathdefault">b</span></span></span></span></span></p>
+</li>
+<li>
+<p>螺母的性能等级分为<strong>7 级</strong>，从 4 到 12，<strong>数值越高越强</strong>，注意所用的<strong>螺母</strong>性能等级不能低于<strong>以其相配螺杆</strong>的性能等级，且存在螺母最小保证力<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mrow><mi>m</mi><mi>i</mi><mi>n</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\sigma_{min}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">m</span><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>的 1/100；</p>
+<blockquote>
+<p>一个常见常考的知识点，<strong>螺母的强度要比螺杆要高一些</strong></p>
+</blockquote>
+</li>
+</ul>
+<h4 id="%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e4%bb%b6%e7%9a%84%e8%ae%b8%e7%94%a8%e5%ba%94%e5%8a%9b">螺纹连接件的许用应力</h4>
+<ul>
+<li>一般情况下是材料<strong>屈服极限<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>S</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong> 去除安全系数 S，但是根据材料的性质，比如<strong>脆性材料的铸铁</strong>，许用应力是用材料的<strong>抗拉极限 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">\sigma_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong> 来除安全系数 S</li>
+<li>抗拉和抗剪的安全系数计算实际上是一致的，和第一章一样</li>
+</ul>
+<h4 id="%e6%8f%90%e9%ab%98%e8%9e%ba%e7%ba%b9%e8%bf%9e%e6%8e%a5%e7%9a%84%e5%bc%ba%e5%ba%a6">提高螺纹连接的强度</h4>
+<ul>
+<li>
+<p>降低螺栓的应力幅</p>
+<ul>
+<li>减小<strong>螺栓</strong>的<strong>刚度</strong>
+<ul>
+<li>增加螺栓的长度</li>
+<li>采用柔性螺栓</li>
+<li>螺母下加装弹性元件</li>
+</ul>
+</li>
+<li>增加被<strong>连接件</strong>的<strong>刚度</strong>
+<ul>
+<li>采用较大刚度的垫圈或不用垫圈</li>
+</ul>
+</li>
+<li><strong>适当</strong>提高预紧力
+<blockquote>
+<p>既能减小螺栓的应力幅，又能保证连接的可靠性</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>
+<p>改善螺纹牙间载荷分布不均的现象</p>
+<ul>
+<li>采用悬置螺母</li>
+<li>采用环槽螺母</li>
+<li>采用内斜螺母</li>
+<li>采用钢丝螺套</li>
+</ul>
+</li>
+<li>
+<p>减小应力集中</p>
+<ul>
+<li>加大过度圆角半径</li>
+<li>加卸载槽</li>
+<li>将螺纹收尾改为退刀槽</li>
+</ul>
+</li>
+<li>
+<p>避免附加弯曲应力</p>
+<ul>
+<li>设计结构时尽量避免斜支撑面</li>
+<li>加装斜垫片、球面垫片或环腰螺栓</li>
+</ul>
+</li>
+<li>
+<p>采用合理制造工艺</p>
+<ul>
+<li>采用滚压螺纹工艺</li>
+<li>采用表面氮化工艺</li>
+<li>采用碳氮共渗工艺</li>
+<li>采用喷丸工艺</li>
+<li>以上及更多表面硬化工艺</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="%e8%9e%ba%e6%97%8b%e4%bc%a0%e5%8a%a8">螺旋传动</h2>
+<ul>
+<li>
+<p>螺旋传动按其用途不同可分为</p>
+<ul>
+<li>传力螺旋
+<ul>
+<li>以传递动力为主，工作速度不高</li>
+<li>设计时要求用较小的力矩产生较大的轴向力</li>
+<li>通常需要自锁能力</li>
+<li>实例：压力机的螺旋传动</li>
+</ul>
+</li>
+<li>传导螺旋
+<ul>
+<li>以传递运动为主，工作速度高</li>
+<li>设计时要求具有很高的运动精度</li>
+<li>实例：机床中工作台的进给螺旋机构</li>
+</ul>
+</li>
+<li>调整螺旋
+<ul>
+<li>用以调整或固定零件之间的相对位置</li>
+<li>实例：仪器中的微调螺旋机构</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>螺旋传动按其螺杆和螺母之间的摩擦性质不同可分为</p>
+<ul>
+<li>滑动螺旋（滑动摩擦），应用较广</li>
+<li>滚动螺旋（滚动摩擦）</li>
+<li>静压螺旋（流体摩擦）</li>
+</ul>
+</li>
+<li>
+<p>滑动螺旋传动的结构和材料</p>
+<blockquote>
+<p>列举知识点</p>
+</blockquote>
+<ul>
+<li>滑动螺旋采用的螺纹类型有矩形螺纹，梯形螺纹和锯齿形螺纹</li>
+<li>上述螺纹特点是牙型角较小，传动效率高</li>
+<li>在螺旋传动中，螺杆材料要有足够的强度和耐磨性</li>
+<li>螺母材料除了有足够强度外，还要求在和螺杆材料配合时摩擦系数小且耐磨</li>
+</ul>
+</li>
+<li>
+<p>滑动螺旋传动的设计计算</p>
+<blockquote>
+<p>列举知识点</p>
+</blockquote>
+<ul>
+<li>滑动螺纹传动的主要失效形式是螺纹磨损</li>
+<li>因此，<strong>螺杆直径</strong>和<strong>螺母高度</strong>是根据<strong>耐磨性条件</strong>确定的</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="%e7%9f%a5%e8%af%86%e7%82%b9%e5%90%88%e9%9b%86">知识点合集</h2>
+<blockquote>
+<p>连接螺纹和传动螺纹的要求有何不同？</p>
+</blockquote>
+<ul>
+<li>对连接螺纹要求
+<ul>
+<li>自锁性好</li>
+<li>有足够的连接强度</li>
+</ul>
+</li>
+<li>对传动螺纹的要求
+<ul>
+<li>传动精度高</li>
+<li>效率高</li>
+<li>其有足够的强度和耐磨性</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在螺栓连接中为什么承受变载荷和冲击载荷的螺栓连接要求有<strong>较长的螺纹余留长度</strong>？</p>
+</blockquote>
+<ul>
+<li>螺纹余留长度越长
+<ul>
+<li>则螺栓杆的刚度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>C</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">C_b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.07153em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>越低
+<ul>
+<li>这对提高螺栓连接的疲劳强度是有利的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>因此承受变载荷和冲击载荷的螺栓连接要求有较长的螺纹余留长度</li>
+</ul>
+<blockquote>
+<p><strong>普通螺栓连接</strong>和<strong>铰制孔用螺栓连接</strong>的主要失效形式是什么？计算准则是什么？</p>
+</blockquote>
+<ul>
+<li>普通螺栓连接的主要失效形式
+<ul>
+<li>螺栓杆和螺纹部分发生<strong>塑性变形或断裂</strong></li>
+</ul>
+</li>
+<li>普通螺栓连接的计算准则
+<ul>
+<li>保证螺栓的<strong>静力抗拉强度</strong>或<strong>疲劳抗拉强度</strong></li>
+</ul>
+</li>
+<li>铰制孔用螺栓连接的主要失效形式
+<ul>
+<li>螺栓杆和孔壁的结合面被<strong>压溃或螺栓杆被剪断</strong></li>
+</ul>
+</li>
+<li>铰制孔用螺栓连接的计算准则
+<ul>
+<li>保证连接的<strong>挤压强度和螺栓的抗剪强度</strong></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>螺栓的性能等级为 8.8 级，与它配合的<strong>螺母性能等级</strong>应该为多少？ 抗拉强度和屈服强度是多少？</p>
+</blockquote>
+<ul>
+<li>与螺栓相配合的螺母的<strong>性能等级应该比螺栓大</strong>
+<ul>
+<li>此处螺栓的性能等级为 8.8 级
+<ul>
+<li>螺母的性能等级至少为 9 级</li>
+</ul>
+</li>
+<li>螺栓的性能等级为 8.8 级
+<ul>
+<li>（a = 8， b = 8）
+<ul>
+<li>抗拉强度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>B</mi></msub><mo>=</mo><mn>100</mn><mi>a</mi><mo>=</mo><mn>800</mn><mo stretchy="false">(</mo><mi>M</mi><mi>p</mi><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\sigma_B = 100a = 800(Mpa)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord mathdefault">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">8</span><span class="mord">0</span><span class="mord">0</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mclose">)</span></span></span></span></li>
+<li>屈服强度<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>σ</mi><mi>S</mi></msub><mo>=</mo><mn>10</mn><mi>a</mi><mi>b</mi><mo>=</mo><mn>640</mn><mo stretchy="false">(</mo><mi>M</mi><mi>p</mi><mi>a</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\sigma_S = 10ab = 640(Mpa)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05764em;">S</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord mathdefault">a</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">6</span><span class="mord">4</span><span class="mord">0</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mord mathdefault">p</span><span class="mord mathdefault">a</span><span class="mclose">)</span></span></span></span></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在什么情况下，螺栓连接的安全系数大小与螺栓直径有关？试说明原因。</p>
+</blockquote>
+<ul>
+<li>在不受预紧力的情况下，螺栓连接的安全系数与螺栓直径有关</li>
+<li>螺栓直径越小<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">↓</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span>，则安全系数越大<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span></li>
+<li>原因是
+<ul>
+<li>扳手的长度随螺栓的直径减小而<strong>线性减短</strong>（力矩变大）</li>
+<li>螺栓的承载能力随螺栓的直径减小而<strong>平方性降低</strong>（承载能力降低）
+<ul>
+<li>因此用扳手拧紧螺栓时
+<ul>
+<li>螺栓直径越细越易过拧紧
+<ul>
+<li>造成螺栓过载断裂
+<ul>
+<li>所以小直径的螺栓应该取较大的安全系数</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>紧螺栓连接受<strong>轴向变载荷</strong>，当 <strong>预紧力<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>F</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">F_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong> 一定时,g 改变螺栓或被连接件的刚度，对螺栓连接的疲劳强度和连接件的紧密性有何影响？</p>
+</blockquote>
+<ul>
+<li><strong>降低 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">↓</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span> 螺栓</strong>的刚度或<strong>增大 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span> 被连接件</strong>的刚度
+<ul>
+<li><strong>提高 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↑</mo></mrow><annotation encoding="application/x-tex">↑</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↑</span></span></span></span></strong> 螺栓连接的疲劳强度</li>
+<li><strong>降低 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>↓</mo></mrow><annotation encoding="application/x-tex">↓</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mrel">↓</span></span></span></span></strong> 螺栓连接的紧密性</li>
+</ul>
+</li>
+<li>反之亦然</li>
+</ul>
+<blockquote>
+<p>滚动螺旋传动与滑动连接传动相比，有何优缺点？</p>
+</blockquote>
+<ul>
+<li>滚动螺旋传动与滑动螺旋传动相比
+<ul>
+<li>优点
+<ul>
+<li>传动效率高</li>
+<li>启动力矩小</li>
+<li>传动灵敏稳定</li>
+<li>工作寿命长</li>
+</ul>
+</li>
+<li>缺点
+<ul>
+<li>制造工艺比较复杂</li>
+<li>长螺杆难于保证热处理及磨削工艺质量</li>
+<li>刚性和抗振性能较差</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+    </body>
+    </html>
